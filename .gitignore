@@ -1,0 +1,73 @@
+# Ignore configuration files that may contain sensitive information
+/docroot/sites/*/settings.local.php
+/docroot/sites/*/services.local.yml
+salt.txt
+*.sql
+*.sql.gz
+# Ignore paths that may contain user-generated content
+/docroot/sites/*/files
+/docroot/sites/*/public
+/docroot/sites/*/private
+/docroot/sites/*/files-public
+
+# Ignore paths that may contain temporary files
+/docroot/sites/*/translations
+/docroot/sites/*/tmp
+/docroot/sites/*/cache
+
+# Ignore drupal core
+/docroot/core
+/vendor
+/docroot/modules/README.txt
+/docroot/modules/contrib
+/docroot/libraries
+/docroot/profiles/README.txt
+/docroot/themes/README.txt
+/docroot/sites/README.txt
+/docroot/sites/example.sites.php
+/docroot/sites/default/example.settings.local.php
+/docroot/sites/default/development.services.yml
+/docroot/sites/development.services.yml
+/docroot/sites/example.settings.local.php
+/docroot/.csslintrc
+/docroot/.editorconfig
+/docroot/.eslintignore
+/docroot/.eslintrc.json
+/docroot/.gitattributes
+/docroot/.ht.router.php
+/docroot/.htaccess
+/docroot/autoload.php
+/docroot/example.gitignore
+/docroot/index.php
+/docroot/INSTALL.txt
+/docroot/LICENSE.txt
+/docroot/README.txt
+/docroot/robots.txt
+/docroot/update.php
+/docroot/web.config
+/.idea
+
+# Misc system files
+node_modules
+public
+.env
+.env.local
+.env.local.php
+.idea
+.DS_Store
+.vscode
+
+# Ignore dist folder of custom theme
+/docroot/themes/custom/ue_theme/dist
+
+local.settings.php
+local.drush.yml
+local.site.yml
+local.services.yml
+*.local
+local.blt.yml
+deployment_identifier
+/travis_wait*
+/files-private
+.phpcs-cache
+phpunit.xml
