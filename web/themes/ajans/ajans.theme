@@ -319,3 +319,18 @@ function ajans_preprocess_field__comment(&$variables) {
     $variables['#cache']['contexts'][] = 'user';
   }
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function ajans_page_attachments_alter(array &$attachments) {
+  // Add Bootstrap CSS from CDN.
+  $attachments['#attached']['library'][] = 'ajans/bootstrap_cdn';
+
+  // Optionally, add Bootstrap JS from CDN (if needed).
+  $attachments['#attached']['drupalSettings']['bootstrap'] = [
+    'js' => [
+      'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+    ],
+  ];
+}

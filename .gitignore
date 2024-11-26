@@ -57,9 +57,6 @@ public
 .DS_Store
 .vscode
 
-# Ignore dist folder of custom theme
-/web/themes/custom/ue_theme/dist
-
 local.settings.php
 local.drush.yml
 local.site.yml
